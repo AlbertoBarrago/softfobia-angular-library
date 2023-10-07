@@ -11,15 +11,14 @@ The Angular File Uploader Component is a versatile component that allows users t
 - Supports various file types and sizes.
 - Easy integration with Angular applications.
 - Fully customizable using CSS variables.
+- Fully tested 
 
 #### Installation
 1. To use the Angular File Uploader Component in your Angular project, follow these steps:
 ```bash
 npm install softfobia-library
 ```
-2. Replace your-library-name with the actual name of your library.
-
-_Import the SoftfobiaLibraryModule into your Angular application module:_
+2. Import the SoftfobiaLibraryModule into your Angular application module:_
 
 ```javascript
 import { NgModule } from '@angular/core';
