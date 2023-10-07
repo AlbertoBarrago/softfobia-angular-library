@@ -1,27 +1,60 @@
-# SoftfobiaLibrary
+# Softfobia Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
 
-## Development server
+## Angular File Uploader Component
+The Angular File Uploader Component is a versatile component that allows users to upload files with ease. It can be easily integrated into your Angular applications, providing a user-friendly file upload experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Features
+- Drag and drop files for upload.
+- Customizable upload button styling.
+- Supports various file types and sizes.
+- Easy integration with Angular applications.
+- Fully customizable using CSS variables.
 
-## Code scaffolding
+#### Installation
+1. To use the Angular File Uploader Component in your Angular project, follow these steps:
+```bash
+npm install softfobia-library
+```
+2. Replace your-library-name with the actual name of your library.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+_Import the SoftfobiaLibraryModule into your Angular application module:_
 
-## Build
+```javascript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { SoftfobiaLibraryModule } from 'your-library-name';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, SoftfobiaLibraryModule],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+3. Use the lib-softfobia-uploader component in your application's templates:
+```angular2html
+ <lib-softfobia-uploader (onUpload)="onUpload($event)"></lib-softfobia-uploader>
+```
 
-## Running unit tests
+### Styling
+The component's appearance can be customized using CSS variables. You can define these variables in your application's stylesheets to control the component's colors, sizes, and more.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Example CSS variables:_
+```css
+:root {
+  --upload-container-height: 300px;
+  --upload-container-border: 2px dashed #ccc;
+  --upload-container-border-radius: 10px;
 
-## Running end-to-end tests
+  --upload-button-background: #3498db;
+  --upload-button-color: #fff;
+  --upload-button-border-radius: 5px;
+  --upload-button-padding: 10px 20px;
+  --upload-button-hover-background: #2980b9;
+}
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
