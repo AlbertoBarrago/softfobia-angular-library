@@ -10,25 +10,25 @@
   --upload-button-hover-background: #2980b9;
 }
 
-.upload-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: var(--upload-container-height);
-  border: var(--upload-container-border);
-  border-radius: var(--upload-container-border-radius);
-}
+/*.upload-container {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  height: var(--upload-container-height);*/
+/*  border: var(--upload-container-border);*/
+/*  border-radius: var(--upload-container-border-radius);*/
+/*}*/
 
-.upload-button {
-  background-color: var(--upload-button-background);
-  color: var(--upload-button-color);
-  border: none;
-  padding: var(--upload-button-padding);
-  cursor: pointer;
-  border-radius: var(--upload-button-border-radius);
-}
+/*.upload-button {*/
+/*  background-color: var(--upload-button-background);*/
+/*  color: var(--upload-button-color);*/
+/*  border: none;*/
+/*  padding: var(--upload-button-padding);*/
+/*  cursor: pointer;*/
+/*  border-radius: var(--upload-button-border-radius);*/
+/*}*/
 
-.upload-button:hover {
-  background-color: var(--upload-button-hover-background);
-}
+/*.upload-button:hover {*/
+/*  background-color: var(--upload-button-hover-background);*/
+/*}*/
