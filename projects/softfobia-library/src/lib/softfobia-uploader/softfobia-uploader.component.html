@@ -1,0 +1,7 @@
+<div class="upload-container" (drop)="onDrop($event)" (dragover)="onDragOver($event)">
+  <input type="file" #fileInput (change)="onFileSelected(fileInput)" style="display: none" />
+  <button class="upload-button" (click)="fileInput.click()">
+    <ng-container *ngIf="!file">Upload File</ng-container>
+    <ng-container *ngIf="file">File Selected: {{ file.name }}</ng-container>
+  </button>
+</div>

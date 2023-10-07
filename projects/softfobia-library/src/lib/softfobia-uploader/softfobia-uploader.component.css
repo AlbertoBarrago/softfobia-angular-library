@@ -1,0 +1,22 @@
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+.upload-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.upload-button:hover {
+  background-color: #2980b9;
+}

@@ -16,6 +16,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "softfobia-library": [
+        "dist/softfobia-library"
+      ]
+    },
     "target": "es2020",
     "module": "es2020",
     "lib": [

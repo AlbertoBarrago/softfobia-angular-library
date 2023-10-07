@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "softfobia-library": {
+      "projectType": "library",
+      "root": "projects/softfobia-library",
+      "sourceRoot": "projects/softfobia-library/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/softfobia-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/softfobia-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/softfobia-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/softfobia-library/src/test.ts",
+            "tsConfig": "projects/softfobia-library/tsconfig.spec.json",
+            "karmaConfig": "projects/softfobia-library/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
